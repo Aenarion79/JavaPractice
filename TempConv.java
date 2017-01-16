@@ -2,7 +2,7 @@ import javax.swing.JOptionPane;
 
 public class TempConv
 {
-	public void main(String [] args)
+	public void main(String [] args)// I am trying to lets the user choose between the 2 measuring systems he/she wants to convert to
 	{
 		String choice;
 		String a;
@@ -29,7 +29,7 @@ public class TempConv
 
 	}
 
-	public void fahrenheit()
+	public void fahrenheit()//method for fahrenheit
 	{
 		double temp1;
 		double result;
@@ -40,7 +40,7 @@ public class TempConv
 
 		System.out.println(result);
 	}
-	public void celsius()
+	public void celsius()//method for celsius
 	{
 		double temp1;
 		double result;
