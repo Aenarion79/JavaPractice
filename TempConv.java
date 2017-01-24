@@ -2,20 +2,20 @@ import javax.swing.JOptionPane;
 
 public class TempConv
 {
-	public void main(String [] args)// I am trying to lets the user choose between the 2 measuring systems he/she wants to convert to
+	public static void main(String [] args)
 	{
 		String choice;
 		String a;
 		String b;
 
-		choice = String.parseString(JOptionPane.showInputDialog("Choose Measuring System, A = Fahrenheit B = Celsius"));
+		choice = (JOptionPane.showInputDialog("Choose Measuring System, A = Fahrenheit B = Celsius"));
 
-		if(choice = "a" || choice = "A")
+		if(choice.equals("a") || choice.equals("A"))
 		{
 			fahrenheit();
 		}
 
-		else if(choice = "b" || choice = "B")
+		else if(choice.equals ("b") || choice.equals("B"))
 		{
 			celsius();
 		}
@@ -29,7 +29,7 @@ public class TempConv
 
 	}
 
-	public void fahrenheit()//method for fahrenheit
+	public static void fahrenheit()
 	{
 		double temp1;
 		double result;
@@ -38,9 +38,9 @@ public class TempConv
 
 		result = ((temp1 -32.00) * (5.00/9.00));
 
-		System.out.println(result);
+		System.out.println("The Temperature is: " +result+ " Celsius");
 	}
-	public void celsius()//method for celsius
+	public static void celsius()
 	{
 		double temp1;
 		double result;
@@ -49,6 +49,6 @@ public class TempConv
 
 		result = ((temp1 * 5.00 / 9.00) + 32.00);
 
-		System.out.println(result);
+		System.out.println("The Temperature is:" +result+ " Fahrenheit");
 	}
 }
